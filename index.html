@@ -40,27 +40,47 @@
                 <div class="row">
                     <div class="col-3"></div>
                     <div class="col-6">
-                        <h1 id="question"> Place holder text</h1>
+                        <h2 id="question">I'm a question</h2>
                         <ul class="px-0 py-0 list-unstyled">
-                            <li class="mb-3"><button id="answer1" value="" type="button"
+                            <li class="mb-3"><button id="answer1" value="0" type="button"
                                     class="btn btn-success ansBtn">Answer1</button></li>
-                            <li class="mb-3"><button id="answer2" value="" type="button"
+                            <li class="mb-3"><button id="answer2" value="1" type="button"
                                     class="btn btn-success ansBtn">Answer2</button></li>
-                            <li class="mb-3"><button id="answer3" value="" type="button"
+                            <li class="mb-3"><button id="answer3" value="2" type="button"
                                     class="btn btn-success ansBtn">Answer3</button></li>
-                            <li class="mb-3"><button id="answer4" value="" type="button"
+                            <li class="mb-3"><button id="answer4" value="3" type="button"
                                     class="btn btn-success ansBtn">Answer4</button></li>
                         </ul>
-                        
-                        <div id="rightwrong" class="font-weight-light"></div>
+
+                        <div id="rightwrong" class="font-weight-light">
                             <hr>
                             <!-- correct or incorrect will be added with javascript -->
+                        </div>
 
 
                     </div>
                 </div>
             </section>
+
+            <!-- final score and initals -->
+            <section id="final">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <h2>Finished!</h2>
+                        <p>Your final score is: <span id="score class="pl-1">0</span></p>
+                        <p>Enter initials: <span class="m1-1"><input placeholder="initials" id="initials"></span>
+                            <button id="sumbit-score" class="btn btn-success mx-1 my-1 d-inline-block">Submit</button>
+                        </p>
+                        <!-- scores added as list -->
+
+                    </div>
+                </div>
+            </section>
+
+            
         </div>
+
 
     </main>
 
