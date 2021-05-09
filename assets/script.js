@@ -76,29 +76,24 @@ function setQuestion(id) {
 function checkAnswer(event) {
     event.preventDefault();
 
-    // show section for yaynay and append message
     yaynayEl.style.display = "block";
     let p = document.createElement("p");
     yaynayEl.appendChild(p);
 
-    // time out after 1 second
     setTimeout(function () {
         p.style.display = 'none';
     }, 1000);
 
-    // answer checker
     if (questions[questionCount].correctAnswer === event.target.value) {
         p.textContent = "Correct!";
     } else if (questions[questionCount].correctAnswer !== event.target.value) {
         secondsLeft = secondsLeft - 10;
-        p.textContent = "Wrong!";
+        p.textContent = "Incorrect!";
     }
 
-    // increment so the questions index is increased
     if (questionCount < questions.length) {
         questionCount++;
     }
-    // call setQuestion to bring in next question when any ansBtn is clicked
     setQuestion(questionCount);
 }
 
