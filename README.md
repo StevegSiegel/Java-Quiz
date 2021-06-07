@@ -18,4 +18,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [Link](https://stevegsiegel.github.io/Java-Quiz/)
 ![screenshot](assets/Screenshot/screenshot.png)
-![screenshot](assets/Screeshot/quiz/png)
+![screenshot](./assets/Screeshot/quiz/png)
